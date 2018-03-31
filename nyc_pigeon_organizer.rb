@@ -13,7 +13,6 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
-  #binding.pry
   i = 0
   until i == birdsArray.length
     newHash[birdsArray[i]] = {}
@@ -22,15 +21,14 @@ def nyc_pigeon_organizer(data)
     newHash[birdsArray[i]][:lives] = []
     i += 1
   end
-#binding.pry
-data.each do |category, hash|
-  hash.each do |key, array|
-    array.each do |bird|
-      if data[category][key].include?(bird)
-        newHash[bird][category].push(key.to_s)
+  data.each do |category, hash|
+    hash.each do |key, array|
+      array.each do |bird|
+        if data[category][key].include?(bird)
+          newHash[bird][category].push(key.to_s)
+        end
       end
     end
   end
-end
-  return newHash
+
 end
