@@ -23,7 +23,11 @@ def nyc_pigeon_organizer(data)
   i = 0
   until i == birdsArray.length
     newHash[birdsArray[i]] = {}
+    newHash[birdsArray[i]][:color] = []
+    newHash[birdsArray[i]][:gender] = []
+    newHash[birdsArray[i]][:lives] = []
     i += 1
   end
-  binding.pry
+binding.pry
+
 end
