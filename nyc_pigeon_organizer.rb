@@ -1,3 +1,29 @@
+require "pry"
+
 def nyc_pigeon_organizer(data)
-  # write your code here!
+  birdsArray = []
+  newHash = {}
+#  binding.pry
+  data.each do |category, hash|
+#    binding.pry
+    hash.each do |key, array|
+#      binding.pry
+      array.each do |bird|
+#        binding.pry
+        if birdsArray.include?(bird)
+#          binding.pry
+        else
+          birdsArray << bird
+#          binding.pry
+        end
+      end
+    end
+  end
+#  binding.pry
+  i = 0
+  until i == birdsArray.length
+    newHash[birdsArray[i]] = {}
+    i += 1
+  end
+  binding.pry
 end
