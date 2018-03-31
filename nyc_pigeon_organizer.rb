@@ -9,7 +9,10 @@ def nyc_pigeon_organizer(data)
     if category == :color
       hash.each do |key, array|
         array.each do |bird|
+          ory
+
           if key.values.include?(bird)
+            binding.pry
             newHash[bird][:color] = [key.to_s]
           end
         end
