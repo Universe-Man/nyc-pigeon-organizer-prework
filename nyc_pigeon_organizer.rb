@@ -1,5 +1,3 @@
-require "pry"
-
 def nyc_pigeon_organizer(data)
   birdsArray = []
   newHash = {}
@@ -30,5 +28,5 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
-
+  return newHash
 end
