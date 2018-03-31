@@ -22,5 +22,6 @@ def nyc_pigeon_organizer(data)
     newHash[birdsArray[i]][:lives] = []
     i += 1
   end
-  binding.pry
+binding.pry
+  newHash[bird][:color].push()
 end
